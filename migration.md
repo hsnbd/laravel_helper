@@ -86,13 +86,14 @@ It will ask you for the related password. Then once you get the mysql promt type
 mysql> show variables like '%sock%'
 You will get something like this:
 
-+-----------------------------------------+-----------------+
-| Variable_name                           | Value           |
-+-----------------------------------------+-----------------+
-| performance_schema_max_socket_classes   | 10              |
-| performance_schema_max_socket_instances | 322             |
-| socket                                  | /tmp/mysql.sock |
-+-----------------------------------------+-----------------+
++-----------------------------------------+---------------------------------+
+| Variable_name                           | Value                           |
++-----------------------------------------+---------------------------------+
+| performance_schema_max_socket_classes   | 10                              |
+| performance_schema_max_socket_instances | -1                              |
+| socket                                  | /opt/lampp/var/mysql/mysql.sock |
++-----------------------------------------+---------------------------------+
+
 Keep the value of the last row:
 
 /tmp/mysql.sock
